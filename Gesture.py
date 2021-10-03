@@ -1,12 +1,12 @@
-import serial  # Serial imported for Serial communication
-import time  # Required to use delay functions
-import pyautogui
+import serial  # For  Serial communication
+import time  # For creating delay functions
+import pyautogui # Library to Perform Tasks
 
-ArduinoSerial = serial.Serial('com4', 9600)  # Create Serial port object // 
-time.sleep(5)  # wait for 5 seconds for the communication to get
+ArduinoSerial = serial.Serial('com4', 9600)  # Creating Serial port object // 
+time.sleep(5)  #  5 seconds for the communication to set
 
 while True:
-    Check = str(ArduinoSerial.readline())  # reading  the serial data Input
+    Check = str(ArduinoSerial.readline())  # reading the serial data Input
     print(Check)
 
     if 'Start/Stop' in Check:
