@@ -145,7 +145,7 @@ void loop() {
                  }
               }   
 
-             //Module to Detect VolumeHigh Gesture// 
+             //Module to Detect Volumedown Gesture// 
           moduleInitiation();
        if(leftDistance<=20 && rightDistance>=45)
       {
